@@ -18,7 +18,7 @@
 .dino{
 	width: 60px;
 	height: 60px;
-	background-image: url(dino.png);
+	background-image: url(dino.gif);
 	position: absolute;
 	bottom: 20px;
 }
@@ -34,7 +34,8 @@
 .game-over{
 		text-align: center;
 		color: #666666;
-		margin-top: 50px;
+		justify-content: center;
+		align-items: center;
 		font-family: arial;
 }
 
