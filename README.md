@@ -12,32 +12,33 @@ Se o gato pular. (Evento 1)
 
 
 2º - Criar uma variável de escopo global para armazenar a pontuação, por exemplo:
-
+```
   let score = 0;
-
+```
 
 3º - Verificar se já existe uma função definida capaz de verificar a ocorrência do Evento 1.
 
 Se existir, dentro dessa função incremente a variável score a cada ocorrência desse evento, exemplo:
-
+```
   let score = 0;
 
   function pular(){
     //demais códigos...
     score++;
   }
-    
+```    
 Se não existir, faça uma função específica para verificar a ocorrência desse Evento 1 (ou qualquer outro evento escolhido por você), dentro dessa nova função incremente a variável score a cada ocorrência desse evento, conforme o exemplo anterior.
 
 
 
 4º Para exibir na tela, no seu arquivo html, você pode definir uma div específica para exibir a pontuação.
-
+```
   <div class="score"></div>
-
+```
 
 Essa div deve ser colocada no seu arquivo html, por exemplo:
 
+```
   <!DOCTYPE html>
     <html lang="pt-br">
     <head>
@@ -49,17 +50,17 @@ Essa div deve ser colocada no seu arquivo html, por exemplo:
             <div class="background">
               <div class="gato"></div>
             </div>
-          </body>
+        </body>
   </html>
-
+```
 
 5º No arquivo javascript você pode atualizar o texto contido na div acessando a propriedade textContent, de qualquer nó escolhido, exemplo:
-
+```
   document.querySelector('.score').textContent = 'SCORE: ' + score ;
-
+```
 
 6º Melhorar o código definindo funções para realizar estas ações, exemplo:
-
+```
   function createScore(){
     document.querySelector('.score').textContent = 'SCORE: ' + score ;
   }
@@ -68,10 +69,10 @@ Essa div deve ser colocada no seu arquivo html, por exemplo:
     score++;	
     createScore();
   }
-
+```
 
 7º Juntando tudo:
-
+```
   let score = 0;
 
   function createScore(){
@@ -90,7 +91,7 @@ Essa div deve ser colocada no seu arquivo html, por exemplo:
 
   //demais códigos...
   createScore();
-
+```
 
 Dessa forma, sempre que o gato pular a variável escore será incrementada e seu valor será atualizado na tela.
 
