@@ -16,6 +16,7 @@ Se o gato pular. (Evento 1)
   let score = 0;
 ```
 
+
 3º - Verificar se já existe uma função definida capaz de verificar a ocorrência do Evento 1.
 
 Se existir, dentro dessa função incremente a variável score a cada ocorrência desse evento, exemplo:
@@ -27,6 +28,7 @@ Se existir, dentro dessa função incremente a variável score a cada ocorrênci
     score++;
   }
 ```    
+
 Se não existir, faça uma função específica para verificar a ocorrência desse Evento 1 (ou qualquer outro evento escolhido por você), dentro dessa nova função incremente a variável score a cada ocorrência desse evento, conforme o exemplo anterior.
 
 
@@ -45,19 +47,20 @@ Essa div deve ser colocada no seu arquivo html, por exemplo:
       <link rel="stylesheet" href="style.css"></link>
       <script src="script.js" charset="UTF-8" defer></script>
     </head>
-        <body>
-            <div class="score"></div>
-            <div class="background">
-              <div class="gato"></div>
-            </div>
-        </body>
-  </html>
+    <body>
+        <div class="score"></div>
+        <div class="background">
+          <div class="gato"></div>
+        </div>
+    </body>
+    </html>
 ```
 
 5º No arquivo javascript você pode atualizar o texto contido na div acessando a propriedade textContent, de qualquer nó escolhido, exemplo:
 ```
   document.querySelector('.score').textContent = 'SCORE: ' + score ;
 ```
+
 
 6º Melhorar o código definindo funções para realizar estas ações, exemplo:
 ```
@@ -70,6 +73,7 @@ Essa div deve ser colocada no seu arquivo html, por exemplo:
     createScore();
   }
 ```
+
 
 7º Juntando tudo:
 ```
