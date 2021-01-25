@@ -7,7 +7,7 @@ Siga os roteiro abaixo.
 
 1º - Identificar qual é a condição para a pontuação do jogo ser incrementada.
 
-Se o gato pular. (Evento 1)
+Exemplo: Se o personagem pular. (Evento 1)
 
 
 
@@ -50,7 +50,7 @@ Essa div deve ser colocada no seu arquivo html, por exemplo:
     <body>
         <div class="score"></div>
         <div class="background">
-          <div class="gato"></div>
+          <div class="dino"></div>
         </div>
     </body>
     </html>
@@ -97,14 +97,8 @@ Essa div deve ser colocada no seu arquivo html, por exemplo:
   createScore();
 ```
 
-Dessa forma, sempre que o gato pular a variável escore será incrementada e seu valor será atualizado na tela.
+Dessa forma, sempre que o personagem pular a variável escore será incrementada e seu valor será atualizado na tela.
 
 
 
-Compreendendo bem esses princípios podemos partir para inúmeras possibilidades mais complexas, como por exemplo incrementar o score somente quando o gato pular um obstáculo sem colidir.
-
-
-
-
-
-Referência: https://developer.mozilla.org/pt-BR/docs/Web/API/Node/textContent
+Compreendendo bem esses princípios podemos partir para inúmeras possibilidades mais complexas, como por exemplo incrementar o score somente quando o personagem pular um obstáculo sem colidir.
